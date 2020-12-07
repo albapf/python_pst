@@ -11,10 +11,17 @@ class TddInPythonExample(unittest.TestCase):
         e = Enemy(0,0)
         self.assertEqual(e.hp, 0)
         self.assertEqual(e.dmg, 0)
-        self.assertTrue(e.is_alive())
+        self.assertFalse(e.is_alive())
 
     def test_partialexam(self):
-        pe = PartialExam(12,35)
-        self.assertEqual(pe.hp, 12)
-        self.assertEqual(pe.dmg, 35)
+        pe = PartialExam()
+        self.assertEqual(pe.hp, 25)
+        self.assertEqual(pe.dmg, 9)
+        self.assertTrue(pe.is_alive())        
+
+    def test_finalexam(self):
+        fe = FinalExam()
+        self.assertEqual(fe.hp, 40)
+        self.assertEqual(fe.dmg, 12)
+        self.assertTrue(fe.is_alive())        
         

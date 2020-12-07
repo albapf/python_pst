@@ -1,4 +1,4 @@
-from character import Character
+from app.character import Character
 
 class Bookworm(Character):
 

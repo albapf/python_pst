@@ -27,4 +27,4 @@ class TddInPythonExample(unittest.TestCase):
         ch = Character(25,52)
         self.assertEqual(ch.hp, 25)
         self.assertEqual(ch.dmg, 52)
-        self.assertTrue(ch.isalive())
+        self.assertTrue(ch.is_alive())
